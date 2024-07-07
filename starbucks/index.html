@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<body>
+  <div class="bg2">
+     <section>
+        <div class="circle"></div>
+          <header>
+              <a href="#">
+                <img src="/images/logo.png" class="logo">
+              </a>
+              <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#hello">Menu</a></li>
+                <li> <a href="#what">What's New</a></li>
+                <li> <a href="#con">Contact</a></li>
+              </ul>
+          </header>
+
+          <div class="content">
+              <div class="textbox">
+                   <h2>It's not just Coffee<br>It's<span>Starbucks</span></h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tempora deleniti, odit eveniet officia natus quidem aspernatur.
+                     Suscipit accusamus non delectus explicabo est et asperiores obcaecati 
+                     eveniet saepe quia, ducimus sint?</p>
+
+                     <a href="#">Learn more</a>
+              </div>
+
+              <div class="imagebox">
+                <img src="/images/img1.png" class="starbucks">
+              </div>
+          </div>
+              
+          <ul class="thumb">
+             <li><img src="/images/thumb1.png" onclick="imgslider('/images/img1.png'); changcolor('#017143')"></li>
+             <li><img src="/images/thumb2.png" onclick="imgslider('/images/img2.png'); changcolor('#eb7495')"></li>
+             <li><img src="/images/thumb3.png" onclick="imgslider('/images/img3.png'); changcolor('#d752b1')"></li>
+          </ul>
+
+          <ul class="sci">
+            <li><a href="#"><img src="/images/facebook.png"></a></li>
+            <li><a href="#"><img src="/images/instagram.png"></a></li>
+            <li><a href="#"><img src="/images/twitter.png"></a></li>
+          </ul>
+       
+     </section>
+    </div>
+
+<!----------------------------------------------------------- Section 2 -------------------------------------------------------->
+<section >
+  <div class="container" id="hello">
+          <div class="circle2"><img src="/images//coffee_102-removebg-preview.png"></div>
+          <div class="menubox">
+            <h1>Menu</h1>
+                <div class="menu1"  id="menubar">
+                  <img src="/images/coffee 128.png">
+                     <div class="description">
+                      <h2>Coffee</h2>
+                      <p>The rise of the second wave of coffee culture is generally attributed to Starbucks,
+                         which introduced a wider variety of coffee experiences.
+                      </p>
+                     </div>
+                </div>
+
+                <div class="menu2" id="menubar">
+                  <img src="/images/brealfast_2-removebg-preview.png">
+                  <div class="description" id="des1">
+                    <h2>Breakfast</h2>
+                    <p>The traditional breakfast believed to have been cooked in ancient Egypt was
+                       fūlmade from fava beans, possibly the ancestor of today's ful medames.
+                    </p>
+                   </div>
+                </div>
+
+                <div class="menu3" id="menubar">
+                  <img src="/images//burger-removebg-preview.png">
+                  <div class="description">
+                    <h2>Meals</h2>
+                    <p>The rise of the third wave of meals culture is generally attributed to Starbucks,
+                       which introduced a wider variety of meals experiences.
+                    </p>
+                   </div>
+                </div>
+          </div>
+          
+        </div>
+       
+      </section>
+      
+<!----------------------------------------------------------- Section 3 -------------------------------------------------------->
+
+<section>
+        <div class="container" id="what">
+         <div class="circle3"><img src="/images/coffee_101-removebg-preview.png"></div>
+              <div class="whatnew">
+                 <h1>What's New</h1>
+                 <h2>Monsoon Session Packs</h2>
+                 <p>One of India's finest coffees, Monsoon Malabar is also one of the best-loved 
+                  coffees in our range. Exposed for months on end, the arabica beans are washed to a pale 
+                  gold by the steamy storms of the monsoon season
+                  the secret behind this coffee's distinctive taste profile. Packed in a protective atmosphere.
+                 </p>
+              </div>
+         
+        </div>
+ </section>
+
+
+
+<!----------------------------------------------------------- Section 4 -------------------------------------------------------->
+
+ <section>
+  <div class="container" id="con">
+   <div class="circle4"><img src="/images/coffee 203.png"></div>
+   <div class="Contact">
+    <h1>Contact</h1>
+      <div class="form">
+                  <div class="form1">
+                    <form>
+                             <div class="input">
+                              <!-- <label>Your Name :</label> -->
+                              <input type="text" placeholder="Your Name" name="name"><br>
+
+                              <!-- <label class="emaillable">email :</label> -->
+                              <input type="email" placeholder="Email" name="email" class="emailinput"><br>
+                
+                              <button type="submit">Submit</button>
+                             </div>
+        
+                    </form>
+                  </div>
+      </div>
+  </div>
+   
+  </div>
+</section>
+
+
+
+     <script type="text/javascript">
+        function imgslider(newimg) {
+          document.querySelector('.starbucks').src = newimg;
+          // document.querySelector('.star2').src = newimg;
+        }
+
+        function changcolor(color){
+          const circle = document.querySelector('.circle');
+          // const c2 = document.querySelector('.circle2');
+          // const c3 = document.querySelector('.circle5');
+          circle.style.background = color;
+          // c2.style.background = color;
+          // c3.style.background = color;
+        }
+     </script>
+</body>
+</html>
